@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive Contact US Page</title>
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+        <link rel="stylesheet" type="text/css" href="contactstyle.css">
+    </head>
+    <body>
+        <section class="contact">
+            
+            <div class="content" id="content">
+                <h2>Contact <span>LLB</span></h2>
+                <p>Email us with your questions or inquiries. We would be happy to answer your
+                     questions and set up a meeting with you. </p>
+            </div>
+            <div class="container" id="container">
+                <div class="contactInfor">
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>06 Summerwoods Abbotsford, <br>East London,<br>5205</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>043 011 0480, <br>084 517 7257</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>brian@llbtech.co.za</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="contact-container">
+                    <!----form---->
+      
+                    <!--- Map  -->
+                    <div class="map">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3347.637807518027!2d27.915655799999996!3d-
+                      32.9605707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e66e0051f280cff%3A0xc385dfbe1411bdb1!2sSummerwoods!
+                      5e0!3m2!1sen!2sza!4v1693398614597!5m2!1sen!2sza"
+                       style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <!--- End Map  -->
+      
+                    <div class="form-container" onsubmit="return false">
+                      <h3>Message Us</h3>
+                      <form action="" class="contact-form">
+                      <input type="text" placeholder="Full Name" id="name" required>
+                      <input type="email"  id="email" placeholder="Enter Your Email..." required>
+                      <textarea  id="msg" cols="30" rows="10" placeholder="Write Message Here..." required></textarea>
+                      
+                      <div class="button">
+                        <button id="send" onclick="message()">Submit</button>
+                        </div>
+                      
+                      <div class="message">
+                        <div class="success" id="success">Your Message Successfully Sent</div>
+                        <div class="danger" id="danger">Failed! Please Double Check Your input</div>
+                    </div>
+                      </form>
+                    </div>  
+                </div>
+            </div>
+            <script src="./app.js"></script>
+            
+            <div class="popup" id="popup">
+                <img src="./img/tick.png">
+                <h2>Thank You</h2>
+                <p>Your details has been successfully submited. Thanks</p>
+                
+                <button class="button"> <a href="index.html" >BACK TO MAIN PAGE</a></button>
+                
+                
+            
+            </div>
+        
+            <script>
+                let popup = document.getElementById("popup")
+        
+                function openPopup()
+                {
+                    popup.classList.add("open-popup"); 
+                    
+                }
+                function closePopup()
+                { 
+                    popup.classList.remove("open-popup"); 
+                    
+                }
+
+            </script>
+    
+        </section>
+    </body>
+</html>
