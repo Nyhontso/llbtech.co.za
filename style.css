@@ -466,6 +466,7 @@ p {
 	padding: 30px;
 	margin: 30px;
 	display: flex;
+	cursor: pointer;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
