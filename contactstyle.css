@@ -61,9 +61,11 @@ body
     position: relative;
     padding: 20px 0;
     display: flex;
+    
 }
 .container .contactInfor .box .icon
 {
+    text-decoration: underline;
     min-width: 60px;
     height: 60px;
     background: #fff;
@@ -72,6 +74,8 @@ body
     align-items: center;
     border-radius: 50%;
     font-size: 22px;
+    color: black;
+    
 }
 .container .contactInfor .box .text
 {
@@ -81,6 +85,7 @@ body
     color: #fff;
     flex-direction: column;
     font-weight: 300;
+    
 }
 .container .contactInfor .box .text h3
 {
@@ -236,8 +241,10 @@ body
     margin-top: 50px;
     padding: 10px 0;
     background: #6fd649;
-    color: #fff;
+    color: black;
+    font-weight: bolder;
     border: 0;
+    text-decoration: none;
     
     outline: none;
     font-size: 18px;
